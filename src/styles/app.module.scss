@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  aside {
+    width: 35vw;
+    height: 100vh;
+    background-color: var(--gray-50);
+  }
+
+  main {
+    margin: 0px auto;
+    overflow-y: scroll;
+    height: 100vh;
+    flex: 1;
+  }
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    aside {
+      height: 95vh;
+    }
+    aside, main {
+      width: 100%;
+    }
+  }
+}
